@@ -1,6 +1,5 @@
 const { application } = require('express');
 var express = require('express');
-var router = express.Router();
 var port = 8080;
 
 /* GET home page. */
@@ -11,5 +10,3 @@ router.get('/', function(req, res, next) {
 application.listen(port, () => {
   console.log('App listening on port ' + {port});
 })
-
-module.exports = router;
